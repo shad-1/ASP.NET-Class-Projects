@@ -49,6 +49,7 @@ $("form").submit((e) => {
   $("#output").text(output);
 });
 
+
 // Helper function to return the appropriate letter grade for a given score.
 function generateLetterGrade(score) {
   let grade = "";
