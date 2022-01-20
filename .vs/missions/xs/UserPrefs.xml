@@ -1,16 +1,26 @@
-﻿<Properties StartupConfiguration="{E6E91513-55DA-4761-B4F7-1E00C084C31C}|mission">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+﻿<Properties StartupConfiguration="{FDE5266B-9C58-4341-BA04-2A794DB1AEE2}|Default">
+  <MonoDevelop.Ide.ItemProperties.mission3 PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="mission3/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="mission3/Views/Shared/_Layout.cshtml" Line="6" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="missions" expanded="True" selected="True">
-            <Node name="mission2" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="Properties" expanded="True" />
+          <Node name="missions" expanded="True">
+            <Node name="mission" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Error.cshtml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="mission3" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

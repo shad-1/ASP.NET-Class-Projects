@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace mission_2.Pages
+namespace mission3.Pages
 {
     public class PrivacyModel : PageModel
     {
