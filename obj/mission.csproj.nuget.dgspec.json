@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shad/Documents/is413/applications/mission_2/mission.csproj": {}
+    "/Users/shad/Documents/is413/applications/missions/mission.csproj": {}
   },
   "projects": {
-    "/Users/shad/Documents/is413/applications/mission_2/mission.csproj": {
+    "/Users/shad/Documents/is413/applications/missions/mission.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shad/Documents/is413/applications/mission_2/mission.csproj",
+        "projectUniqueName": "/Users/shad/Documents/is413/applications/missions/mission.csproj",
         "projectName": "mission",
-        "projectPath": "/Users/shad/Documents/is413/applications/mission_2/mission.csproj",
+        "projectPath": "/Users/shad/Documents/is413/applications/missions/mission.csproj",
         "packagesPath": "/Users/shad/.nuget/packages/",
-        "outputPath": "/Users/shad/Documents/is413/applications/mission_2/obj/",
+        "outputPath": "/Users/shad/Documents/is413/applications/missions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shad/.config/NuGet/NuGet.Config"
