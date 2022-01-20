@@ -1,52 +1,61 @@
 ﻿// Shad Baird
-// Jan 12, 2022
+// Jan 19, 2022
 
-$("form").submit((e) => {
-  e.preventDefault();
-  console.log({ e });
+//this function will fire whenever the page loads.
+//because of the logic in checking if numbers are valid numbers, it will only produce a result when the form is valid
+//so, combined with the model binding to the form, it should always be valid.
+
+//however, the separation of duties is awful here. I would much rather write this all in c#, probably in a service, but at least in my controller.
+$((e) => {
+    
+  //e.preventDefault();
 
   //* Weights
   let assignmentWeight = 0.55;
   let groupProjectWeight = 0.05;
   let quizWeight = 0.1;
   let examWeight = 0.2;
-  let intexWeight = 0.1;
+    let intexWeight = 0.1;
 
-  // Get the scores out of the event data.
-  // I will apologize now for this repetitive code. I intend to go back and fix it, but I'm tight on time right now.
-  let assignmentScore = isNaN(
-    parseInt(e.currentTarget.elements.assignments.value)
-  )
-    ? 0
-    : parseInt(e.currentTarget.elements.assignments.value);
-  let groupProjectScore = isNaN(
-    parseInt(e.currentTarget.elements.group_proj.value)
-  )
-    ? 0
-    : parseInt(e.currentTarget.elements.group_proj.value);
-  let quizScore = isNaN(parseInt(e.currentTarget.elements.quiz.value))
-    ? 0
-    : parseInt(e.currentTarget.elements.quiz.value);
-  let examScore = isNaN(parseInt(e.currentTarget.elements.exams.value))
-    ? 0
-    : parseInt(e.currentTarget.elements.exams.value);
-  let intexScore = isNaN(parseInt(e.currentTarget.elements.intex.value))
-    ? 0
-    : parseInt(e.currentTarget.elements.intex.value);
+    //Grab the values from the form
+    let assignments = $("form")[0].assignments.value;
+    let groupProjects = $("form")[0].group_proj.value;
+    let quizzes = $("form")[0].quiz.value;
+    let exams = $("form")[0].exams.value;
+    let intex = $("form")[0].intex.value;
 
-  // Calculate the weighted scores
-  let totalScore =
-    assignmentWeight * assignmentScore +
-    groupProjectWeight * groupProjectScore +
-    quizWeight * quizScore +
-    examWeight * examScore +
-    intexWeight * intexScore;
+    if (
+        (assignments &&
+        groupProjects &&
+        quizzes &&
+        exams &&
+        intex) && 
+        (
+          assignments < 101 &&
+          groupProjects < 101 &&
+          quizzes < 101 &&
+          exams < 101 &&
+          intex < 101
+        )
+    ) {
 
-  let letterGrade = generateLetterGrade(totalScore);
+        // Calculate the weighted scores
+        let totalScore =
+            assignmentWeight * assignments +
+            groupProjectWeight * groupProjects +
+            quizWeight * quizzes +
+            examWeight * exams +
+            intexWeight * intex;
 
-  let output = `${Math.floor(totalScore)}%  (${letterGrade})`;
+        let letterGrade = generateLetterGrade(totalScore);
 
-  $("#output").text(output);
+        let output = `${Math.floor(totalScore)}%  (${letterGrade})`;
+
+        $("#output").text(output);
+    }
+    else {
+        $("#output").text("");
+    }
 });
 
 

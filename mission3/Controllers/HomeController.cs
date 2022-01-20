@@ -18,16 +18,33 @@ namespace mission3.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Grade()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Grade(GradeFormModel model)
+        {
+           
+            return View(model);
+  
+        }
+
+        [HttpGet]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

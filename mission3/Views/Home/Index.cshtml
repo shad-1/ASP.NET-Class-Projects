@@ -1,9 +1,6 @@
-﻿@page
-@*model IndexModel*@ 
-@{
-    ViewBag.Title = "My wife calls me a nerd";
+﻿@{
+    ViewData["Title"] = "My wife calls me a nerd.";
 }
-
 <!--Hero Img-->
 <div class="hero-wrapper">
     <img src="img/IMG_0414.jpeg" alt="Shad with Family" srcset="">
@@ -33,36 +30,5 @@
         <li class="list-item">IT Consultant</li>
     </ol>
 
-<!--Grade Section-->
-    <h2 class="my-4">Grades</h2>
-    <p>To land one of these jobs, I am hoping to get into the MISM. To gain entry in the MISM, I pay attention to my grades. Here's a little grade calculator to determine how I one will do in this class.</p>
-
-    <form action="submit">
-        <div class="form-group">
-            <label for="assignments" class="form-label">Assignments</label>
-            <input type="number" class="form-control" name="assignments" id="assignments">
-        </div>
-        <div class="form-group">
-            <label for="group_proj" class="form-label">Group Project</label>
-            <input type="number" class="form-control" name="group_proj" id="group_proj">
-        <div class="form-group">
-            <label for="quiz" class="form-label">Quizzes</label>
-            <input type="number" class="form-control" name="quiz" id="quiz">
-        </div>
-        <div class="form-group">
-            <label for="exams" class="form-label">Exams</label>
-            <input type="number" class="form-control" name="exams" id="exams">
-        </div>
-        <div class="form-group">
-            <label for="intex" class="form-label">INTEX</label>
-            <input type="number" class="form-control" name="intex" id="intex">
-        </div>
-        <button type="submit" class="btn btn-primary mb-3">Calculate</button>
-    </form>
-
-    <div class="d-flex justify-content-start">
-        <h4>Your Grade:</h4>
-        <h4 class="px-4" id="output"></h4>
-    </div>
 </div>
 

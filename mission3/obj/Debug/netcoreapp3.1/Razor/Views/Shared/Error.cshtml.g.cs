@@ -26,8 +26,15 @@ using mission3.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/shad/Documents/is413/applications/missions/mission3/Views/_ViewImports.cshtml"
+using mission3.Controllers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ecc4d2bcad30a6aee551879bc7e7094ebb4184d", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"59281c9b3ff521114b5be8e6d6f9fc96cf463ccf", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4f6cf53095161b7ab7c6d6439239fda0eee4c829", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

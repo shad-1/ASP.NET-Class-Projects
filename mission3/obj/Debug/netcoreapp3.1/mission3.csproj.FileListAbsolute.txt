@@ -7,7 +7,6 @@
 /Users/shad/Documents/is413/applications/missions/mission3/bin/Debug/netcoreapp3.1/mission3.pdb
 /Users/shad/Documents/is413/applications/missions/mission3/bin/Debug/netcoreapp3.1/mission3.Views.dll
 /Users/shad/Documents/is413/applications/missions/mission3/bin/Debug/netcoreapp3.1/mission3.Views.pdb
-/Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.csproj.AssemblyReference.cache
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.GeneratedMSBuildEditorConfig.editorconfig
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.AssemblyInfoInputs.cache
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.AssemblyInfo.cs
@@ -21,6 +20,7 @@
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.TagHelpers.input.cache
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.TagHelpers.output.cache
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/mission3.RazorCoreGenerate.cache
+/Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/Razor/Views/Home/Grade.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/mission3/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
