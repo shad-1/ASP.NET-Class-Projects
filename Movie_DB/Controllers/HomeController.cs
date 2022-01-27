@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -45,13 +46,22 @@ namespace Movie_DB.Controllers
         [HttpPost]
         public IActionResult AddMovie(Movie mv)
         {
-            _context.Add(mv);
-            _context.SaveChanges();
-            // An attempt to redirect to the Movies page, but it might not be so.
-            //This list is expected in the viewbag.
-            List<Movie> movies = _context.Movies.ToList();
-            ViewBag.Movies = movies;
-            return View("Movies");
+            if(ModelState.IsValid)
+            {
+                _context.Add(mv);
+                _context.SaveChanges();
+                // An attempt to redirect to the Movies page, but it might not be so.
+                //This list is expected in the viewbag.
+                List<Movie> movies = _context.Movies.ToList();
+                ViewBag.Movies = movies;
+                return View("Movies");
+            }
+            //If invalid, return the form.
+            else
+            {
+                return View(mv);
+            }
+            
         }
 
         public IActionResult Podcast()
