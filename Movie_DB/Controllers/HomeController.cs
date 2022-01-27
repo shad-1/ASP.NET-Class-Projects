@@ -47,8 +47,11 @@ namespace Movie_DB.Controllers
         {
             _context.Add(mv);
             _context.SaveChanges();
-            // An attempt to redirect to the Movies page, but it might not be so. 
-            return View(Movies());
+            // An attempt to redirect to the Movies page, but it might not be so.
+            //This list is expected in the viewbag.
+            List<Movie> movies = _context.Movies.ToList();
+            ViewBag.Movies = movies;
+            return View("Movies");
         }
 
         public IActionResult Podcast()

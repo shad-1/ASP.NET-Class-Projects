@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{B6D65B3D-D91E-4A65-B268-BD0FEF0C4E66}|Default">
   <MonoDevelop.Ide.ItemProperties.Movie__DB PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Movies.cshtml">
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Movie_DB" expanded="True">
             <Node name="Movie_DB" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Movies.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
