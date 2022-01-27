@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Shad Baird
+//1/26/2022
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -12,6 +15,7 @@ namespace Movie_DB.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        //bring in the Movies context. This may need to be renamed with multiple db contexts in the future.
         private MoviesContext _context;
 
         public HomeController(ILogger<HomeController> logger, MoviesContext context)
@@ -43,7 +47,8 @@ namespace Movie_DB.Controllers
         {
             _context.Add(mv);
             _context.SaveChanges();
-            return Movies();
+            // An attempt to redirect to the Movies page, but it might not be so. 
+            return View(Movies());
         }
 
         public IActionResult Podcast()
