@@ -17,7 +17,6 @@
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.RazorAssemblyInfo.cache
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.RazorAssemblyInfo.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/staticwebassets/Movie_DB.StaticWebAssets.Manifest.cache
-/Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/staticwebassets/Movie_DB.StaticWebAssets.xml
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/scopedcss/bundle/Movie_DB.styles.css
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.TagHelpers.input.cache
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.TagHelpers.output.cache
@@ -67,3 +66,5 @@
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/AddMovie.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Movies.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Podcast.cshtml.g.cs
+/Users/shad/Documents/is413/applications/missions/Movie_DB/bin/Debug/net5.0/Movie_DB.StaticWebAssets.xml
+/Users/shad/Documents/is413/applications/missions/Movie_DB/bin/Debug/net5.0/Movie_DB

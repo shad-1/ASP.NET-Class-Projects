@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B6D65B3D-D91E-4A65-B268-BD0FEF0C4E66}|Default">
   <MonoDevelop.Ide.ItemProperties.Movie__DB PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
