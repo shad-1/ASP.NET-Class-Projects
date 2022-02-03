@@ -22,7 +22,6 @@
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.TagHelpers.output.cache
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Movie_DB.RazorCoreGenerate.cache
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
-/Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
@@ -66,5 +65,5 @@
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/AddMovie.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Movies.cshtml.g.cs
 /Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Podcast.cshtml.g.cs
-/Users/shad/Documents/is413/applications/missions/Movie_DB/bin/Debug/net5.0/Movie_DB.StaticWebAssets.xml
 /Users/shad/Documents/is413/applications/missions/Movie_DB/bin/Debug/net5.0/Movie_DB
+/Users/shad/Documents/is413/applications/missions/Movie_DB/obj/Debug/net5.0/Razor/Views/Home/Delete.cshtml.g.cs

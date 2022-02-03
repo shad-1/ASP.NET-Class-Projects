@@ -26,8 +26,15 @@ using Movie_DB.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/shad/Documents/is413/applications/missions/Movie_DB/Views/_ViewImports.cshtml"
+using Movie_DB.Enums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e2c49ebeef2fd58d4597d5fb114f88c610e86594", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ae4f0cfb06b3b8cc9bea8da8a1b1d53a266f5dfd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6d78c40d51aa1fe5f2369a828c654e149935b0b1", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/img/JoelHiltonHeadshot.jpeg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -65,7 +72,7 @@ using Movie_DB.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\n<div class=\"text-center\">\n    <h1 class=\"display-4\">The Joel Hilton Film Collection</h1>\n    <div class=\"center m-4 p-4\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e2c49ebeef2fd58d4597d5fb114f88c610e865944114", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e2c49ebeef2fd58d4597d5fb114f88c610e865944295", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

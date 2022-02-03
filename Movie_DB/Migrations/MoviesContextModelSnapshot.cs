@@ -15,13 +15,70 @@ namespace Movie_DB.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.13");
 
+            modelBuilder.Entity("Movie_DB.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CategoryName = "Action/Adventure"
+                        },
+                        new
+                        {
+                            CategoryID = 2,
+                            CategoryName = "Comedy"
+                        },
+                        new
+                        {
+                            CategoryID = 3,
+                            CategoryName = "Drama"
+                        },
+                        new
+                        {
+                            CategoryID = 4,
+                            CategoryName = "Family"
+                        },
+                        new
+                        {
+                            CategoryID = 5,
+                            CategoryName = "Horror/Suspense"
+                        },
+                        new
+                        {
+                            CategoryID = 6,
+                            CategoryName = "Miscellaneous"
+                        },
+                        new
+                        {
+                            CategoryID = 7,
+                            CategoryName = "Television"
+                        },
+                        new
+                        {
+                            CategoryID = 8,
+                            CategoryName = "VHS"
+                        });
+                });
+
             modelBuilder.Entity("Movie_DB.Models.Movie", b =>
                 {
                     b.Property<int>("MovieID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Category")
+                    b.Property<int>("CategoryID")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Director")
@@ -35,6 +92,7 @@ namespace Movie_DB.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Notes")
+                        .HasMaxLength(25)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Rating")
@@ -49,13 +107,15 @@ namespace Movie_DB.Migrations
 
                     b.HasKey("MovieID");
 
-                    b.ToTable("movies");
+                    b.HasIndex("CategoryID");
+
+                    b.ToTable("Movies");
 
                     b.HasData(
                         new
                         {
                             MovieID = 1,
-                            Category = 0,
+                            CategoryID = 1,
                             Director = "Peter Jackson",
                             Edited = false,
                             Rating = 2,
@@ -65,7 +125,7 @@ namespace Movie_DB.Migrations
                         new
                         {
                             MovieID = 2,
-                            Category = 0,
+                            CategoryID = 1,
                             Director = "Christopher Nolan",
                             Edited = false,
                             Rating = 2,
@@ -75,13 +135,24 @@ namespace Movie_DB.Migrations
                         new
                         {
                             MovieID = 3,
-                            Category = 3,
+                            CategoryID = 4,
                             Director = "Chris Sanders",
                             Edited = false,
                             Rating = 1,
                             Title = "How to Train Your Dragon",
                             Year = (short)2010
                         });
+                });
+
+            modelBuilder.Entity("Movie_DB.Models.Movie", b =>
+                {
+                    b.HasOne("Movie_DB.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

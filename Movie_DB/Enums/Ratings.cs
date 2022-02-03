@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Movie_DB.Models
+namespace Movie_DB.Enums
 {
-    public enum Rating
+    public enum Ratings
     {
         G,
         PG,
@@ -9,3 +9,4 @@ namespace Movie_DB.Models
         R
     }
 }
+

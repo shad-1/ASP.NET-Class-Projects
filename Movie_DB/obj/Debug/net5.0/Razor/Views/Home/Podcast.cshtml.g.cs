@@ -26,8 +26,15 @@ using Movie_DB.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/shad/Documents/is413/applications/missions/Movie_DB/Views/_ViewImports.cshtml"
+using Movie_DB.Enums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bc7830232371d5190b53dcd9d37047ccecbf7496", @"/Views/Home/Podcast.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ae4f0cfb06b3b8cc9bea8da8a1b1d53a266f5dfd", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6d78c40d51aa1fe5f2369a828c654e149935b0b1", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Podcast : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

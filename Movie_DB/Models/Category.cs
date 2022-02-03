@@ -1,8 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace Movie_DB.Models
 {
-    public enum Category
+    public class Category
     {
-        Action_Adventure, Comedy, Drama, Family, Horror_Suspense, Miscellaneous, Television, VHS
+        [Key]
+        [Required]
+        public int CategoryID { get; set; }
+        [Required]
+        public string CategoryName { get; set; }
     }
 }

@@ -1,8 +1,37 @@
 ﻿@{
     var movies = ViewBag.Movies;
 }
-@*Some experimentation with Razor template interpolation/generaton*@
-@foreach (var movie in movies)
+
+<table class="table table-striped">
+    <thead>
+        <tr> 
+            <th>ID</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Category</th>
+            <th>Director</th>
+            <th>Rating</th>
+            <th>Edited</th>
+            <th>Lent To</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Movie movie in movies)
             {
-                <div>@movie.Title</div>
+                <tr>
+                    <th>@movie.MovieID</th>
+                    <td>@movie.Title</td>
+                    <td>@movie.Year</td>
+                    <td>@movie.Category.CategoryName</td>
+                    <td>@movie.Director</td>
+                    <td>@movie.Rating</td>
+                    <td>@movie.Edited</td>
+                    <td>@movie.LentTo</td>
+                    <td>@movie.Notes</td>
+                    <th><a asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieID">Edit</a></th>
+                    <th><a asp-controller="Home" asp-action="Delete" asp-route-id="@movie.MovieID">Delete</a></th>
+                </tr>
             }
+    </tbody>
+</table>
